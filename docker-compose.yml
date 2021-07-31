@@ -10,7 +10,7 @@ a:
 #b:
 #    build: .
 #    ports:
-#        - "6900:6900"
+#        - "6901:6900"
 #   volumes:
 #        - ./configs/b.conf:/ircd/unrealircd.conf
 #        - ./certs/server.cert.pem:/ircd/tls/server.cert.pem
