@@ -1,0 +1,8 @@
+a:
+    build: .
+    ports:
+        - "6900:6900"
+    volumes:
+      - ./configs/a.conf:/ircd/unrealircd.conf
+      - ./certs/server.cert.pem:/ircd/tls/server.cert.pem
+      - ./certs/server.key.pem:/ircd/tls/server.key.pem
