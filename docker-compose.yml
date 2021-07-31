@@ -6,3 +6,12 @@ a:
       - ./configs/a.conf:/ircd/unrealircd.conf
       - ./certs/server.cert.pem:/ircd/tls/server.cert.pem
       - ./certs/server.key.pem:/ircd/tls/server.key.pem
+# do the following for additional servers, in link blocks you only need to use the container name (b, c, d, etc...) and the spkifp remains the same due to sharing the same keys
+#b:
+#    build: .
+#    ports:
+#        - "6900:6900"
+#   volumes:
+#        - ./configs/b.conf:/ircd/unrealircd.conf
+#        - ./certs/server.cert.pem:/ircd/tls/server.cert.pem
+#        - ./certs/server.key.pem:/ircd/tls/server.key.pem
